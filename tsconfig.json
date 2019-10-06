@@ -10,14 +10,57 @@
     "importHelpers": true,
     "target": "es2015",
     "module": "esnext",
-    "typeRoots": ["node_modules/@types"],
-    "lib": ["es2017", "dom"],
+    "typeRoots": [
+      "node_modules/@types"
+    ],
+    "lib": [
+      "es2017",
+      "dom"
+    ],
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@nest-build-repo/api-interfaces": ["libs/api-interfaces/src/index.ts"]
+      "@nest-build-repo/api-interfaces": [
+        "libs/api-interfaces/src/index.ts"
+      ],
+      "@app/lib1": [
+        "libs/lib1/src"
+      ],
+      "@app/lib1/*": [
+        "libs/lib1/src/*"
+      ],
+      "@app/lib2": [
+        "libs/lib2/src"
+      ],
+      "@app/lib2/*": [
+        "libs/lib2/src/*"
+      ],
+      "@app/lib3": [
+        "libs/lib3/src"
+      ],
+      "@app/lib3/*": [
+        "libs/lib3/src/*"
+      ],
+      "@nest-build-repo/lib4": [
+        "libs/lib4/src/index.ts"
+      ],
+      "@app/lib5": [
+        "libs/lib5/src"
+      ],
+      "@app/lib5/*": [
+        "libs/lib5/src/*"
+      ],
+      "@app/lib6": [
+        "libs/lib6/src"
+      ],
+      "@app/lib6/*": [
+        "libs/lib6/src/*"
+      ]
     }
   },
-  "exclude": ["node_modules", "tmp"]
+  "exclude": [
+    "node_modules",
+    "tmp"
+  ]
 }
